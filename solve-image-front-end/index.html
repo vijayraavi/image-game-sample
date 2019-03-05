@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Game</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!--Semantic UI framework https://semantic-ui.com-->
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+</head>
+<body>
+<h1>Solve Image Problem</h1>
+<div class="ui segment">
+    <div class="ui modal">
+        <div id="model-content-header" class="header">
+            Your Result
+        </div>
+        <div id="model-content-result" class="content">
+            You are a bot!
+        </div>
+        <div class="actions">
+            <div class="ui black positive button">
+              Close
+            </div>
+        </div>
+    </div>
+    <h2>A random image</h2>
+    <img id="main-image" class="display-image" />
+    <h2>Make this image match above</h2>
+    <img id="option-image" class="display-image"/>
+    <div class="all-buttons">
+        <button class="ui button" type="button" onclick="rotate('left')"> Rotate Left </button>
+        <button class="ui primary button" type="button" onclick="validate();"> Verify </button>
+        <button class="ui button" type="button" onclick="rotate('right');"> Rotate Right </button>
+    </div>
+</div>
+</body>
+</html>
