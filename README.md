@@ -9,6 +9,9 @@ The repository contains two apps-
 
 The app when launched in the browser, shows a random image acquired from an Azure Storage Blob and a randomly rotated version of the image. The goal is to rotate the second image to match the first one. Something like this could easily be modified to create a new version of ReCAPTCHA that asks users to solve such tiny puzzles.
 
+![Alt text](sample.png?raw=true "A Look")
+
+
 **In order to deploy this app, you would need-**
 
 1. An Azure Storage with a Blob container filled with any number of random `png` images.
