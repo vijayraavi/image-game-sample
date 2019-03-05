@@ -9,9 +9,6 @@ The repository contains two apps-
 
 The app when launched in the browser, shows a random image acquired from an Azure Storage Blob and a randomly rotated version of the image. The goal is to rotate the second image to match the first one. Something like this could easily be modified to create a new version of ReCAPTCHA that asks users to solve such tiny puzzles.
 
-<img width="554" alt="sample" src="https://user-images.githubusercontent.com/16520682/53797090-53c1f400-3eea-11e9-8111-784044fb048d.PNG">
-
-
 **In order to deploy this app, you would need-**
 
 1. An Azure Storage with a Blob container filled with any number of random `png` images.
@@ -23,3 +20,19 @@ The app when launched in the browser, shows a random image acquired from an Azur
 1. You must change the CORS settings in your Azure Function App to allow requests from your Azure Web App.
 2. You must update the `solve-image-front-end/script.js` to use your function app instead of `http://localhost:7071`.
 3. You must add an App Setting `AZURE_IMAGE_STORAGE_CONNECTION_STRING` with the connection string of the Azure Storage with images. You must also add an App Setting `AZURE_IMAGE_STORAGE_CONTAINER_NAME` with the name of your Blob container in the Azure Storage with images.
+
+## Screenshots
+  
+**Homepage** 
+
+<img width="554" alt="sample" src="https://user-images.githubusercontent.com/16520682/53797090-53c1f400-3eea-11e9-8111-784044fb048d.PNG">
+
+**Solved**
+
+<img width="664" alt="solved" src="https://user-images.githubusercontent.com/16520682/53798886-0182d200-3eee-11e9-9c2c-cf7ff7ce201d.PNG">
+
+**Failed**
+
+<img width="642" alt="failed" src="https://user-images.githubusercontent.com/16520682/53798904-0cd5fd80-3eee-11e9-8eb4-58582757ee54.PNG">
+
+
