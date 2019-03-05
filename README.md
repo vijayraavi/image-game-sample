@@ -1,6 +1,6 @@
 # image-game-sample
 
-This is an Image game sample using Azure Functions on Python and Azure Web App (for hosting the front end).
+This is an Image game sample using Azure Functions on Python and Azure Web App (for hosting the front end). The sample shows how to decode/encode images in JSON objects to send and receive over HTTP requests and to perform image tansformation on them. It uses Pillow library in Python to do rotation of images. This can easily be upgraded to do more complex transformations. 
 
 The repository contains two apps-
 
